@@ -1,4 +1,4 @@
-# Тесты для ["google"](https://www.google.ru)
+# Тесты ["google"](https://www.google.ru)
 
 ## Установка
 

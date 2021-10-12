@@ -1,11 +1,11 @@
-import time
+import logging
 
-import pytest
 from common.constants import LoginConstants
 
+logger = logging.getLogger(__name__)
 
 
-class TestYandex:
+class TestGoogle:
     def test_yandex_input(self, app):
         """
         Steps
@@ -19,8 +19,5 @@ class TestYandex:
         app.google.fill_search_field()
         app.google.click_on_button()
         app.google.calculations()
-
-        #app.google.click_on_button()
-        assert 0 in app.google.calculation_result()
-        time.sleep(3)
-
+        logger.info(f" {LoginConstants.ANSWER} == {app.google.calculation_result()}")
+        assert LoginConstants.ANSWER == app.google.calculation_result()

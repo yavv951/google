@@ -1,5 +1,2 @@
 class LoginConstants:
-    ABOUT_COMPANY = "О компании"
-
-
-
+    ANSWER = "0"
